@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "OpenSansBold", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background-color: #0e76bc;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+
+.head {
+  background-color: #bcd1df;
+  background-image: url(../img/LOGO.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 200px;
+  background-position-y: 0px;
+}
+
+.head-punkt {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.head-punkt-link {
+  font-family: "buttle";
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0e76bc;
+  font-size: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: azure;
+}
+
+.head-punkt-link:hover {
+  color: #bcd1df;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 70vh;
+  background-color: green;
+}
+
+.list-first {
+  list-style: url(https://findicons.com/files/icons/2210/blue_coral/32/bio_hazard.png);
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-first p {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: aqua;
+  display: inline;
+  padding: 0 10px;
+}
+
+.list-second {
+  list-style: url(https://findicons.com/files/icons/951/google_maps/32/airplane_sport.png);
+  background-color: fuchsia;
+  padding-bottom: 10px;
+}
+
+.new::after {
+  content: "new";
+  color: white;
+  background-color: orange;
+  display: inline;
+  padding: 2px;
+  margin: 2px;
+}
+
+.wrapper-gal {
+  background-image: url(../img/seamless_texture_02.jpg);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+
+.gal {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.pictures {
+  border: 5px red solid;
+  margin: 10px;
+}
+
+.pictures:hover {
+  border: 5px solid transparent;
+}
+
+.article {
+  padding-bottom: 20px;
+}
+
+.article-link {
+  color: orange;
+  text-decoration: none;
+  border-bottom: 3px red solid;
+  font-family: "rampart";
+}
+
+.article-description {
+  background-color: chartreuse;
+  padding: 5px;
+  display: inline;
+}
+
+.article-read:hover {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.article-comment {
+  text-decoration: none;
+  color: grey;
+}
+
+.article-min h2 {
+  text-align: center;
+}
+
+.article-min p::first-letter {
+  font-family: "methodiy";
+  color: red;
+  font-size: 50px;
+}
+
+h1 {
+  color: aliceblue;
+  font-family: "OpenSansBold", Arial, sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.navigation-item {
+  font-size: 25px;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: gray;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navigation-article {
+  margin-bottom: 40px;
+}
+
+.navigatiom-button {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: aliceblue;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: azure;
+}
+
+textarea,
+input {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 50vh;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="text"] {
+  text-transform: capitalize;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-label-inline {
+  margin-bottom: 0.5em;
+}
+
+.form-group-bord {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: 1px solid transparent;
+}
+
+.form-group-bord:hover {
+  border: 1px red dashed;
+}
+
+.form-group {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.hello-world {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+@font-face {
+  font-family: "rampart";
+  src: url("../assets/fonts/RampartOne-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "methodiy";
+  src: url("../assets/fonts/Methodiy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "buttle";
+  src: url(../assets/fonts/Undertale-Battle-Font.ttf);
+  font-style: normal;
+  font-weight: normal;
+}

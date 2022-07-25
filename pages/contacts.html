@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>Контакты</title>
+</head>
+
+<body>
+  <div class="wrapper"></div>
+  <header class="head">
+    <div class="container">
+      <h1>Контакты</h1>
+      <nav class="head-punkt">
+        <a class="head-punkt-link" href="../index.html">Главная</a>
+        <a class="head-punkt-link" href="articles.html">Статьи</a>
+        <a class="head-punkt-link" href="catalog.html">Каталог</a>
+        <a class="head-punkt-link" href="gallery.html">Галерея</a>
+        <a class="head-punkt-link" href="page-nav.html">Навигация</a>
+        <a class="head-punkt-link" href="registration.html">Регистрация</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container main">
+    <div>
+      <h2>Адрес</h2>
+      <p>
+        г.Харьков <br>
+        ул. Молочная 30 <br>
+        Тел. 095-222-22-22
+      </p>
+    </div>
+    <hr>
+    <div>
+      <h2>Как добраться</h2>
+      <img src="../img/Screenshot_1.png" alt="карта проезда" width="400">
+    </div>
+    <hr>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <fieldset>
+        <legend>Оставьте ваши данные</legend>
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" placeholder="Ваше имя" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="tel">Телефон</label>
+          <input type="tel" placeholder="+38-xxx-xxx-xx-xx" id="tel" name="tel" pattern="[0-9]{5,10}">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Ваш email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="comment">Комментарии</label>
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="ваш комментарий"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="submit"> Отправить</button>
+        </div>
+        <div>
+          <button class="btn" type="reset">Сбросить</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; Copyright</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <div class="wrapper"></div>
+  <header class="head">
+    <div class="container">
+      <h1>Регистрация</h1>
+      <nav class="head-punkt">
+        <a class="head-punkt-link" href="../index.html">Главная</a>
+        <a class="head-punkt-link" href="articles.html">Статьи</a>
+        <a class="head-punkt-link" href="catalog.html">Каталог</a>
+        <a class="head-punkt-link" href="contacts.html">Контакты</a>
+        <a class="head-punkt-link" href="gallery.html">Галерея</a>
+        <a class="head-punkt-link" href="page-nav.html">Навигация</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container main">
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <fieldset>
+        <legend>Форма №1</legend>
+        <div class="form-group">
+          <label class="form-label" for="surname">Фамилия</label>
+          <input id="surname" name="surname" placeholder="Фамилия" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="name">Имя</label>
+          <input id="name" name="name" placeholder="Имя" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="photo">Фотография</label>
+          <input type="file" id="photo" name="photo">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" name="email">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Форма №2</legend>
+        <div class="form-group">
+          <label class="form-label" for="pass">Пароль</label>
+          <input type="password" id="pass" placeholder="Пароль" name="password" minlength="3" maxlength="10">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Форма №3</legend>
+        <div class="form-group">
+          <label class="form-label" for="site">Ваш сайт</label>
+          <input type="url" id="site" placeholder="https://mysite.name" name="site">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Выбрать пол</legend>
+        <div class="form-group-bord">
+          <input type="radio" id="male" value="male" name="gender">
+          <label class="form-label-line" for="male">Мужской</label>
+        </div>
+        <div class="form-group-bord">
+          <input type="radio" id="female" value="female" name="gender">
+          <label class="form-label-line" for="female"> Женский</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Форма №5</legend>
+        <div class="form-group">
+          <label class="form-label" for="date">Дата рождения</label>
+          <input type="date" id="date" name="date">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Предпочитаемая кухня</legend>
+        <div class="form-group-bord">
+          <input type="checkbox" id="ukr" value="ukr" name="kitchen">
+          <label class="form-label-line" for="ukr">Украинская</label>
+        </div>
+        <div class="form-group-bord">
+          <input type="checkbox" id="georg" value="geor" name="kitchen">
+          <label class="form-label-line" for="georg">Грузинская</label>
+        </div>
+        <div class="form-group-bord">
+          <input type="checkbox" id="pol" value="pol" name="kitchen">
+          <label class="form-label-line" for="pol">Польская</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Форма №7</legend>
+        <div class="form-group">
+          <label class="form-label" for="osebe">О себе</label>
+          <textarea cols="30" rows="5" placeholder="Напишите о себе" id="osebe" name="osebe"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Форма №8</legend>
+        <div class="form-group">
+          <button class="btn" type="submit">Зарегистрироваться</button>
+        </div>
+        <div>
+          <button class="btn" type="reset">Очистить форму</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; Copyright</p>
+    </div>
+  </footer>
+</body>
+
+</html>
